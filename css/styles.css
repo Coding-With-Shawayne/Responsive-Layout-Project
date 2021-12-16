@@ -20,7 +20,6 @@ body {
 .nav, .contact-info {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 h2 {
@@ -36,11 +35,14 @@ h2 {
     list-style-type: none;
 }
 
-.nav ul {
+.nav ul, .skills-info li {
     list-style-type: none;
     text-align: center;
     justify-content: center;
-    /* flex-direction: row; */
+}
+
+.footer-info {
+    list-style-type: none;
 }
 
 .nav a {
@@ -93,7 +95,7 @@ a:hover {
     border-top: 1px solid #ebecec;
 }
 
-.footer-nav {
+.footer-info {
     display: flex;
     justify-content: space-between;
 }
@@ -110,12 +112,12 @@ a:hover {
     padding: 0 25px;
 }
 
-h2, .developer-container, .container, .portfolio-container, .footer-nav {
+h2, .developer-container, .skills-container, .contact-container, .portfolio-container, .footer-nav {
     text-align: center;
     font-size: 1.225em;
 }
 
-.portfolio-container, .developer-container {
+.portfolio-container, .developer-container, .contact-container {
     padding: 10px;
     background: #e8e9e9;
     border-radius: 5px;
@@ -140,7 +142,7 @@ MEDIA QUERIES  --------------------
         flex-direction: row;
     }
 
-    .footer-nav {
+    .footer-info {
         display: flex;
         justify-content: space-between;
     }
@@ -149,7 +151,7 @@ MEDIA QUERIES  --------------------
         margin-right: auto;
     }
 
-    .container {
+    .contact-container, .skills-container {
         
         display: flex;
         flex-direction: row;
@@ -173,7 +175,7 @@ MEDIA QUERIES  --------------------
         margin-bottom: 30px;
     }
 
-    .container {
+    .contact-container, .skills-container {
         display: flex;
         flex-direction: column;
     }
@@ -193,7 +195,7 @@ MEDIA QUERIES  --------------------
         flex-basis: 33.333%;
     }
 
-    .main-header, .footer-nav {
+    .main-header, .footer-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -209,7 +211,7 @@ MEDIA QUERIES  --------------------
         margin-bottom: 30px;
     }
 
-    .container {
+    .contact-container, .skills-container {
         display: flex;
     }
 
