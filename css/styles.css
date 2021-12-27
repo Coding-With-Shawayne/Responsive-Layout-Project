@@ -127,7 +127,7 @@ h2, .developer-container, .skills-container, .contact-container, .portfolio-cont
     padding: 30px;
 }
 
-.footer-home, .footer-portfolio, .footer-contact {
+.footer-home, .footer-portfolio, .footer-contact, .footer-skills {
     display: none;
 }
 
@@ -190,8 +190,12 @@ MEDIA QUERIES  --------------------
         display: none;
     }
 
-    .footer-home, .footer-portfolio, .footer-contact {
+    .footer-home, .footer-portfolio, .footer-contact, .footer-skills {
         display: block;
+    }
+
+    .profile-image {
+        padding-left: 50px;
     }
 
 }
@@ -199,6 +203,11 @@ MEDIA QUERIES  --------------------
 @media (min-width: 1024px) {
     .portfolio-flex {
         flex-basis: 33.333%;
+    }
+
+    body {
+        max-width: 1200px;
+        margin: auto;
     }
 
     .main-header, .footer-info {
